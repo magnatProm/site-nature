@@ -1,0 +1,27 @@
+body{
+    background: #000000;
+    color: rgba(255, 255, 255, 0.5);
+}
+.nav__btn-menu::after, .nav__btn-menu::before {
+    background: #FFFFFF;
+    color: #FFFFFF;
+}
+.header{background: black;}
+.list__btn{
+    color: #FFFFFF;
+}
+.item__link_active * {
+    color: rgba(0, 0, 0, 0.5);
+    background: #FFFFFF;
+}
+.nav__list {
+    background: #000000;
+}
+.promo__title , .title , .subtitle{
+    color: #FFFFFF;
+}
+.btn__main{
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+footer{color: rgb(148 148 148 / 18%);}

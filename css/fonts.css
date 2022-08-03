@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Regular.woff');
+    src: url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Regular.woff?#iefix') format('embedded-opentype'),
+    url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Regular.woff') format('woff'),
+    url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Regular.woff') format('truetype');
+    font-style: normal;
+font-weight: 400;
+}
+/* @font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Medium.woff');
+    src: url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Medium.woff?#iefix') format('embedded-opentype'),
+    url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Medium.woff') format('woff'),
+    url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-Medium.woff') format('truetype');
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-VariableFont_wght.woff');
+    src: url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-VariableFont_wght.woff?#iefix') format('embedded-opentype'),
+    url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-VariableFont_wght.woff') format('woff'),
+    url('../fonts/Alumni_Sans_Inline_One\,Rubik/AnyConv.com__Rubik-VariableFont_wght.woff') format('truetype');
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-VariableFont_wdth,wght.woff');
+    src: url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-VariableFont_wdth,wght.woff?#iefix') format('embedded-opentype'),
+    url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-VariableFont_wdth,wght.woff') format('woff'),
+    url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-VariableFont_wdth,wght.woff') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    /* font-family: 'OpenSans-Bold'; */
+    src: url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-Bold.woff');
+    src: url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-Bold.woff?#iefix') format('embedded-opentype'),
+    url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-Bold.woff') format('woff'),
+    url('../fonts/Alumni_Sans_Inline_One\,Open_Sans/AnyConv.com__OpenSans-Bold.woff') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
