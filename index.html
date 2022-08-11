@@ -9,13 +9,14 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Rubik&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/null.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style_sass.css">
     
     <script defer src="js.js"></script>
 </head>
 <body>
     <main class="container">
-        <section class="promo">
+        <section class="promo" data-wotor="Vocano">
             <header class="header">
                 <nav class="header__nav container">
                     <ul class="nav__list">
@@ -24,8 +25,7 @@
                     <li class="list__item"><button class="list__btn">Desert</button></li>
                     <li class="list__item"><button class="list__btn">Mountain</button></li>
                     <li class="list__item"><button class="list__btn">Canyon</button></li>
-                    <li class="list__item"><button class="list__btn">Hill</button></li>
-                    <!-- <li class="list__item"><button class="list__btn">Bay</button></li> -->
+                    <li class="list__item"><a href="file:///C:/Users/user1/Desktop/%D1%81%D0%B0%D0%B9%D1%82%2012/two.html" class="list__btn">Hill</a></li>
                     <li class="list__item">
                         <input type="checkbox" class="list__btn list__input"><img src="sun.png" class="list__img" alt="img">
                     </li>
@@ -44,7 +44,7 @@
         </section>
 
 
-<section class="content wrapper">
+<section class="content wrapper" data-wotor="Peninsula">
     <div class="wrapper__title">
     <h2 class="title">Geographical Type</h2>
      </div>
@@ -61,21 +61,23 @@
         </div>
 
     </div>
-    <div class="box video"><button>Learn More</button></div>
+    <div class="box video">
+        <video src="Overlay.mp4" controls poster></video>
+    </div>
 </div>
 </section>
 
 
-<section class="content wrapper">
+<section class="content wrapper" data-wotor="Desert">
     <div class="wrapper__title">
         <h3 class="subtitle">Gallery</h3>
     </div>
 <div class="content__wrapper_main">
 
     <div class="gallery content__column-left">
-        <div class="gallery__item">1</div>
-        <div class="gallery__item">1</div>
-        <div class="gallery__item">1</div>
+        <div class="gallery__item"><span class="gallery__icon"></span></div>
+        <div class="gallery__item"><span class="gallery__icon"></span></div>
+        <div class="gallery__item"><span class="gallery__icon"></span></div>
     </div>
     <div class="content__text">
         <p>
@@ -89,34 +91,34 @@
 </section>
 
 
-<section class="content wrapper">
+<section class="content wrapper" data-wotor="Mountain">
 <div class="content__wrapper">
     <div class="box">
         <img src="img/image-5.png" alt="img" class="box__img">
         <div class="box__center">
-        <h3 class="subtitle">Hill view</h3>
+        <h3 class="box__subtitle subtitle">Hill view</h3>
     <p>Brown and Green Mountain View</p>
 </div>
     </div>
 </div>
 </section>
-<section class="content wrapper">
+<section class="content wrapper" data-wotor="Canyon">
     <div class="wrapper__title">  
         <h2 class="title">Other Geography</h2>
     </div>
 <div class="content__wrapper">
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Desert</h3>
+        <h3 class="box__subtitle subtitle">Desert</h3>
         <p class="box__aside">Area of land that receives no more than 25 centimeters (10 inches) of precipitation a year</p>
         <img src="img/image-6.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Canyon</h3>
+        <h3 class="box__subtitle subtitle">Canyon</h3>
         <p class="box__aside">A deep, narrow valley with steep sides</p>
         <img src="img/image-7.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Peninsula</h3>
+        <h3 class="box__subtitle subtitle">Peninsula</h3>
         <p class="box__aside">A landform that extends from a mainland and is surrounded by water on most,</p>
         <img src="img/image-8.png" alt="img" class="box__img">
     </div>
@@ -129,5 +131,24 @@
     <footer>
         <h6>© Copy Right. All rights reserved.</h6>
     </footer>
+
+    <div class="modal none">
+        <div class="modal_dialog box">
+          <div class="modal_content">
+            <div class="slider">
+                    <div class="slider__carousel">
+                        <img src="img/image-1.png" alt="img" class="card">
+                        <img src="img/image 4.png" alt="img" class="card">
+                        <img src="img/image-3.png" alt="img" class="card">
+                    </div>
+                <div class="control">
+                    <button class="control__left">←</button>
+                    <button class="control__right">→</button>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </body>
 </html>

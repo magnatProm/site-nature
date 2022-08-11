@@ -1,0 +1,429 @@
+$text_black: #000000
+$text_white: #ffffff
+
+@mixin display
+    display: flex 
+    flex-wrap: wrap
+
+@mixin box
+    border-radius: 8px
+    color: $text_white
+    background: linear-gradient(359.72deg, rgba(0, 0, 0, 0.5) 2.63%, rgba(0, 0, 0, 0) 136.03%)
+
+@mixin title
+    font-family: 'Open Sans','Open Sans Hebrew'
+    color: $text_black
+
+@mixin text_style($weight, $size, $distance)
+    font-weight: $weight
+    font-size: $size 
+    line-height: $distance 
+
+$body: 400, 18px, 28px
+$promo_title: 400, calc(69px + (100vw / 99)), 110px
+$title: 400, 40px, 54px
+$subtitle: 700, 24px, 33px
+$aside: 400, 14px, 17px
+
+// $promo_title: (400, calc(69px + (100vw / 99)), 110px)
+
+// clamp(4.5rem, 4.117rem + 1.91vw, 5.313rem)
+
+        // &__btn-menu::after
+        // @extend .nav__btn-menu::before
+
+body
+    color: rgba(0, 0, 0, 0.5)
+    font-family: 'Rubik'
+    @include text_style($body...)
+    position: relative
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+.wrapper
+    margin: 65px 0px
+.container
+    max-width: 999px
+    padding: 0px 16px
+    margin: auto
+.header
+    overflow-x: clip
+    padding: 42px 0px 65px 0px
+    position: fixed
+    left: 16px
+    right: 16px
+    top: 0px
+    z-index: 1
+    background: #ffffff
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    &__nav
+        padding: 0px 0px
+
+
+    
+.nav  
+    &__list
+        display: flex
+        gap: 22px
+        list-style-type: none
+        padding-inline-start: 0px
+        align-items: center
+        border-radius: 8px
+    &__btn
+        display: none
+    &__btn-menu
+        position: relative
+        color: $text_black
+        padding: 15px 0px
+    &__btn-menu::after,
+    &__btn-menu::before
+        content: ""
+        display: block
+        position: absolute
+        height: 2px
+        border-radius: 3px
+        background: black
+        transition: all 0.5s ease-in-out
+    &__btn-menu::before
+        box-shadow: 0 -9px 0 0
+        top: 15px
+        width: 25px
+    &__btn-menu::after
+        width: 25px
+        bottom: 4px
+    &__btn-menu_active::after
+        transform: rotate(50deg)
+        bottom: 13px
+    &__btn-menu_active::before
+        transform: rotate(-50deg)
+        box-shadow: 0 0px 0 0
+    
+@mixin position($sum...)
+    top: $sum
+    bottom: $sum
+    opacity: $sum
+
+.list
+    &__item 
+        flex-grow: 1
+        position: relative
+    &__btn 
+        color: rgba(0, 0, 0, 0.5)
+        border: none
+        padding: 10px 30px
+        width: 100%
+        background: inherit
+        border-radius: 8px
+    &__btn:active 
+        border: 1px solid black
+    &__btn:hover 
+        box-shadow: 0px 0px 0px 2px
+    &__input
+        @include position(0)
+        position: absolute
+    &__img
+        display: block
+        margin: 0 auto
+        height: 40px
+
+.item__link_active *
+        color: $text_white
+        background: black
+
+
+.promo
+    &__wrapper
+        text-align: center
+        margin-top: 10pc
+
+    &__title
+        @include text_style($promo_title...)
+        @include title
+
+.content__wrapper_main
+    @include display
+    gap: 75px
+    // display: flex
+    // flex-wrap: wrap
+
+.wrapper__title
+    margin-bottom: 24px
+
+
+
+.content__wrapper_main > div
+    flex-basis: 324px
+
+
+
+/* //------------------------------ */
+
+// @mixin text_style($weight, $size, $distance)
+//     font-family: 'Open Sans','Open Sans Hebrew'
+//     font-weight: $weight
+//     font-size: $size 
+//     line-height: $distance
+//     color: $text_black 
+// @mixin text_style($weight, $size, $distance)
+//     font-weight: $weight
+//     font-size: $size 
+//     line-height: $distance 
+
+// $title: 400, 40px, 54px
+// $subtitle: 700, 24px, 33px
+// $aside: 400, 14px, 17px
+// $footer: 400, 18px, 28px
+
+
+.title 
+    @include text_style($title...)
+    @include title
+  
+.subtitle 
+    @include text_style($subtitle...)
+    @include title
+    // font-family: 'Open Sans','Open Sans Hebrew'
+    // color: $text_black
+// .title 
+//     font-family: 'Open Sans','Open Sans Hebrew' 
+//     font-weight: 400 
+//     font-size: 40px 
+//     line-height: 54px
+//     color: $text_black 
+  
+// .subtitle 
+//     color: $text_black 
+//     font-family: 'Open Sans','Open Sans Hebrew' 
+//     font-weight: 700 
+//     font-size: 24px 
+//     line-height: 33px 
+  
+
+.content__column-left 
+    flex-grow: 1 
+  
+
+
+.btn__main 
+    padding: 8px 30px 
+    border: 1px solid black 
+    border-radius: 4px 
+    background: inherit 
+    &__main:hover
+        box-shadow: 0px 1px 15px 0px
+// .btn__main 
+//     padding: 8px 30px 
+//     border: 1px solid $text_black 
+//     border-radius: 4px 
+//     background: inherit 
+ 
+.video 
+    flex-basis: auto 
+    height: 250px 
+    background: rgb(50, 53, 73)
+    @include box
+
+video
+    width: 100%
+    height: fit-content
+
+// calc(424px + (100vw / 24))
+
+.gallery 
+    display: flex 
+    flex-wrap: wrap-reverse
+    flex-direction: column 
+    gap: 24px 
+    height: calc(424px + (100vw / 24))
+    max-height: 490px
+    &__item 
+        flex-grow: 1 
+        flex-shrink: 2 
+        flex-basis: 200px 
+        border-radius: 8px 
+        transition: all 0.3s ease-in-out 
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__item:nth-child(1) 
+        flex-grow: 0 
+        background: url('../img/image-1.png') rgb(255, 136, 0) no-repeat center/cover 
+    
+    &__item:nth-child(2) 
+        background: url('../img/image-3.png') rgb(50, 53, 73) no-repeat center/cover 
+    
+    &__item:nth-child(3) 
+        background: url('../img/image%204.png') rgb(50, 53, 73) no-repeat center/cover 
+    
+    &__item:hover 
+        box-shadow: inset 0px 1px 120px 20px
+    &__icon
+        position: relative
+    &__item:hover .gallery__icon::after
+        content: '\271A'
+        position: absolute
+        font-size: 40px
+        left: -20px
+        top: -10px
+        color: $text_white
+        text-shadow: 0 0 0px $text_white
+        // content: '\2694'
+
+
+.box 
+    @include box
+    flex: 1 1 250px 
+    position: relative 
+    overflow: hidden
+    text-align: left
+    &__text 
+        max-width: 500px 
+    &__info > *:not(:last-child)
+        margin-bottom: 16px 
+    &__subtitle
+        overflow-wrap: anywhere
+        color: $text_white 
+    &__aside  
+        opacity: -0.5 
+        @include text_style($aside...)
+        color: rgba(255, 255, 255, 0.5) 
+        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 
+    &:hover &__aside  
+        opacity: 1 
+    &:hover &__img  
+        object-position: 50% 60% 
+        transform: scale3d(1.5,1.1,1)
+    &__img 
+        transition: all 0.9s ease-out 
+        z-index: -1 
+        position: absolute 
+        top: 0 
+        left: 0 
+        height: -webkit-fill-available 
+        width: 100% 
+        object-position: unset 
+        object-fit: none 
+    &__center 
+        margin: auto 
+        padding: 56px 35px 82px 35px 
+        display: table 
+    &__padding
+        padding: 0px 32px 
+        padding-top: 110px 
+        padding-bottom: 17px 
+
+
+
+.column-reverse 
+    flex-direction: inherit 
+ 
+.content__text * + * 
+    margin-top: 42px 
+
+.content__wrapper
+    @include display 
+    width: auto 
+    gap: 16px 
+    // display: flex 
+    // flex-wrap: wrap 
+
+
+ 
+// .box 
+    // flex: 1 1 200px 
+    // position: relative 
+    // overflow: hidden 
+// .content__wrapper .box 
+//     flex: 1 1 200px 
+//     position: relative 
+//     overflow: hidden 
+// .content__wrapper[class*="box"] 
+//     flex: 1 1 200px 
+//     position: relative 
+//     overflow: hidden 
+ 
+.modal
+    display: flex
+    height: 100vh
+    width: 100vw
+    background: linear-gradient(359.72deg, rgba(0, 0, 0, 0.5) 2.63%, rgba(0, 0, 0, 0) 136.03%)
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0px
+    z-index: 1
+    &_dialog 
+        flex: 0 1 auto
+
+
+.slider
+    overflow: hidden
+    max-width: 600px
+    &__carousel
+        display: flex
+        transition: all 0.7s ease-in 0s
+        // height: 300px
+
+.control
+    display: flex
+    justify-content: space-between
+    width: 100%
+    position: absolute
+    top: 50%
+    & *
+        transition: all 0.3s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
+        color: $text_white
+        padding: 8px 15px
+        border: 1px solid #fff
+        border-radius: 4px
+        background: inherit
+        opacity: 0.2
+    & *:hover
+        opacity: 1
+    
+.none
+    display: none
+
+
+@media (max-width:790px)  
+    body
+        text-align: center  
+    
+    .content__wrapper_main > div 
+        flex-grow: 1 
+        flex-basis: auto 
+     
+    .column-reverse 
+        flex-direction: column-reverse 
+      
+    .column-reverse *[class*="box"] 
+        flex-basis: auto 
+      
+    .box__text 
+        max-width: none 
+     
+    .content__text * + * 
+        margin-top: 14px 
+      
+ 
+@media (max-width:1000px)  
+    .nav__list  
+        flex-direction: column 
+        padding: 50px 
+        position: absolute 
+        background: white 
+        right: -250px 
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+    .nav__btn 
+        display: block  
+ 
+
+
+footer 
+    text-align: center 
+    color: rgba(0, 0, 0, 0.2) 
+    h6 
+        font-size: inherit
+.nav__list_open 
+    right: 0 
+ 
+ 

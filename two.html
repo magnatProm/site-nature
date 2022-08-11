@@ -9,10 +9,23 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Rubik&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/null.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style_sass.css">
     
     <script defer src="js.js"></script>
 </head>
+<style>
+    .box:nth-child(2n){
+        flex-grow: 10;
+    }
+    .box__text {
+    margin: auto;
+    max-width: 500px;
+    }
+    .wrapper__title {
+    margin: auto;
+    }
+</style>
 <body>
     <main class="container">
         <section class="promo">
@@ -21,44 +34,42 @@
                     <ul class="nav__list">
                     <li class="list__item item__link_active"><button class="list__btn">Vocano</button></li>
                     <li class="list__item"><button class="list__btn">Peninsula</button></li>
-                    <li class="list__item"><button class="list__btn">Desert</button></li>
-                    <li class="list__item"><button class="list__btn">Mountain</button></li>
-                    <li class="list__item"><button class="list__btn">Canyon</button></li>
-                    <li class="list__item"><button class="list__btn">Hill</button></li>
-                    <li class="list__item"><button class="list__btn">Bay</button></li>
+                    <li class="list__item">
+                        <input type="checkbox" class="list__btn list__input"><img src="sun.png" class="list__img" alt="img">
+                    </li>
                     </ul>
                     <button class="list__btn nav__btn"><div class="nav__btn-menu"></div></button>
                 </nav>
             </header>
 
 <div class="promo__wrapper">
-    <h2 class="title">Other Geography</h2>
+    <h2 class="promo__title">Look</h2>
 </div>
 
         </section>
 
 <section class="content wrapper">
     <div class="wrapper__title">  
-        <h2 class="title">Other Geography</h2>
+        <h2 class="title">Gallery</h2>
     </div>
 <div class="content__wrapper">
-    <div class="box box__info box__padding">
-        <h3 class="subtitle">Desert</h3>
+    <div class="box box__max box__info box__padding">
+        <h3 class="box__subtitle subtitle">Desert</h3>
         <p class="box__aside">Area of land that receives no more than 25 centimeters (10 inches) of precipitation a year</p>
         <img src="img/image-6.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Canyon</h3>
+        <h3 class="box__subtitle subtitle">Canyon</h3>
         <p class="box__aside">A deep, narrow valley with steep sides</p>
         <img src="img/image-7.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Peninsula</h3>
+        <h3 class="box__subtitle subtitle">Peninsula</h3>
         <p class="box__aside">A landform that extends from a mainland and is surrounded by water on most,</p>
         <img src="img/image-8.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Desert</h3>
+        <h3 class="box__subtitle subtitle">Desert</h3>
         <p class="box__aside">Area of land that receives no more than 25 centimeters (10 inches) of precipitation a year</p>
         <img src="img/image-6.png" alt="img" class="box__img">
     </div>
@@ -66,27 +77,40 @@
         <h2 class="title">Other Geography</h2>
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Canyon</h3>
+        <h3 class="box__subtitle subtitle">Canyon</h3>
         <p class="box__aside">A deep, narrow valley with steep sides</p>
         <img src="img/image-7.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Peninsula</h3>
+        <h3 class="box__subtitle subtitle">Peninsula</h3>
         <p class="box__aside">A landform that extends from a mainland and is surrounded by water on most,</p>
         <img src="img/image-8.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Desert</h3>
+        <h3 class="box__subtitle subtitle">Desert</h3>
         <p class="box__aside">Area of land that receives no more than 25 centimeters (10 inches) of precipitation a year</p>
         <img src="img/image-6.png" alt="img" class="box__img">
     </div>
+    <p class="box__text">
+        Hills may form through geomorphic phenomena: faulting, erosion of larger landforms such as mountains and movement and deposition of sediment by glaciers (notably moraines and drumlins or by erosion exposing solid rock which then weathers down into a hill). 
+    </p>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Canyon</h3>
+        <h3 class="box__subtitle subtitle">Canyon</h3>
         <p class="box__aside">A deep, narrow valley with steep sides</p>
         <img src="img/image-7.png" alt="img" class="box__img">
     </div>
     <div class="box box__info box__padding">
-        <h3 class="subtitle">Peninsula</h3>
+        <h3 class="box__subtitle subtitle">Peninsula</h3>
+        <p class="box__aside">A landform that extends from a mainland and is surrounded by water on most,</p>
+        <img src="img/image-8.png" alt="img" class="box__img">
+    </div>
+    <div class="box box__info box__padding">
+        <h3 class="box__subtitle subtitle">Canyon</h3>
+        <p class="box__aside">A deep, narrow valley with steep sides</p>
+        <img src="img/image-7.png" alt="img" class="box__img">
+    </div>
+    <div class="box box__info box__padding">
+        <h3 class="box__subtitle subtitle">Peninsula</h3>
         <p class="box__aside">A landform that extends from a mainland and is surrounded by water on most,</p>
         <img src="img/image-8.png" alt="img" class="box__img">
     </div>
