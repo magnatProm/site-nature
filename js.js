@@ -33,10 +33,10 @@ document.querySelector('.modal').addEventListener('click', (event) => {
 })
 
 
-document.querySelector('.video__preview').addEventListener('click', function() {
-   this.classList.add('none');
-            document.querySelector('video').play();
-      
+document.querySelector('.video__preview').addEventListener('click', function () {
+      this.classList.add('none');
+      document.querySelector('video').play();
+
 })
 
 
@@ -100,10 +100,6 @@ document.querySelector('.header__nav').addEventListener('click', (event) => {
       if (event.target.closest('.list__input')) {
             event.target.closest('.list__item').classList.remove('item__link_active');
       }
-
-
-      // const text = event.target.innerHTML;
-      // const anchor = document.querySelector(`[data-wotor="${text}"]`)
 
       scroll_page(anchor);
 

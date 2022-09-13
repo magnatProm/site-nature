@@ -31,12 +31,6 @@ $title: 400, 40px, 54px
 $subtitle: 700, 24px, 33px
 $aside: 400, 14px, 17px
 
-// $promo_title: (400, calc(69px + (100vw / 99)), 110px)
-
-// clamp(4.5rem, 4.117rem + 1.91vw, 5.313rem)
-
-        // &__btn-menu::after
-        // @extend .nav__btn-menu::before
 
 body
     color: rgba(0, 0, 0, 0.5)
@@ -147,8 +141,6 @@ body
 .content__wrapper_main
     @include display
     gap: 75px
-    // display: flex
-    // flex-wrap: wrap
 
 .wrapper__title
     margin-bottom: 24px
@@ -162,23 +154,6 @@ body
 
 /* //------------------------------ */
 
-// @mixin text_style($weight, $size, $distance)
-//     font-family: 'Open Sans','Open Sans Hebrew'
-//     font-weight: $weight
-//     font-size: $size 
-//     line-height: $distance
-//     color: $text_black 
-// @mixin text_style($weight, $size, $distance)
-//     font-weight: $weight
-//     font-size: $size 
-//     line-height: $distance 
-
-// $title: 400, 40px, 54px
-// $subtitle: 700, 24px, 33px
-// $aside: 400, 14px, 17px
-// $footer: 400, 18px, 28px
-
-
 .title 
     @include text_style($title...)
     @include title
@@ -186,21 +161,6 @@ body
 .subtitle 
     @include text_style($subtitle...)
     @include title
-    // font-family: 'Open Sans','Open Sans Hebrew'
-    // color: $text_black
-// .title 
-//     font-family: 'Open Sans','Open Sans Hebrew' 
-//     font-weight: 400 
-//     font-size: 40px 
-//     line-height: 54px
-//     color: $text_black 
-  
-// .subtitle 
-//     color: $text_black 
-//     font-family: 'Open Sans','Open Sans Hebrew' 
-//     font-weight: 700 
-//     font-size: 24px 
-//     line-height: 33px 
   
 
 .content__column-left 
@@ -216,11 +176,6 @@ body
     &:hover
         background: linear-gradient(359.72deg, rgba(0, 0, 0, 0.5) 2.63%, rgba(0, 0, 0, 0) 136.03%)
         box-shadow: 0px 1px 15px 0px
-// .btn__main 
-//     padding: 8px 30px 
-//     border: 1px solid $text_black 
-//     border-radius: 4px 
-//     background: inherit 
  
 .video 
     position: relative
@@ -251,9 +206,6 @@ video
     background: rgba(255, 255, 255, 0.2)
     backdrop-filter: blur(20px)
 
-// calc(424px + (100vw / 24))
-    // \2023
-        // 15px 11px 14px 16px
 
 .gallery 
     display: flex 
@@ -292,7 +244,6 @@ video
         top: -10px
         color: $text_white
         text-shadow: 0 0 0px $text_white
-        // content: '\2694'
 
 
 .box 
@@ -348,24 +299,7 @@ video
     @include display 
     width: auto 
     gap: 16px 
-    // display: flex 
-    // flex-wrap: wrap 
-
-
- 
-// .box 
-    // flex: 1 1 200px 
-    // position: relative 
-    // overflow: hidden 
-// .content__wrapper .box 
-//     flex: 1 1 200px 
-//     position: relative 
-//     overflow: hidden 
-// .content__wrapper[class*="box"] 
-//     flex: 1 1 200px 
-//     position: relative 
-//     overflow: hidden 
- 
+  
 .modal
     @include flex-center
     height: 100vh
@@ -384,7 +318,6 @@ video
     &__carousel
         display: flex
         transition: all 0.7s ease-in 0s
-        // height: 300px
 
 .control
     display: flex
