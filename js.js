@@ -33,6 +33,13 @@ document.querySelector('.modal').addEventListener('click', (event) => {
 })
 
 
+document.querySelector('.video__preview').addEventListener('click', function() {
+   this.classList.add('none');
+            document.querySelector('video').play();
+      
+})
+
+
 
 
 // slider bar

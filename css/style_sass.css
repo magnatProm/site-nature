@@ -25,7 +25,7 @@ body {
   left: 16px;
   right: 16px;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -179,22 +179,47 @@ body {
   background: inherit;
 }
 
-.btn__main__main:hover {
+.btn__main:hover {
+  background: linear-gradient(359.72deg, rgba(0, 0, 0, 0.5) 2.63%, rgba(0, 0, 0, 0) 136.03%);
   box-shadow: 0px 1px 15px 0px;
 }
 
 .video {
+  position: relative;
+  display: inherit;
   flex-basis: auto;
-  height: 250px;
+  height: max-content;
   background: #323549;
+  overflow: hidden;
   border-radius: 8px;
   color: #ffffff;
   background: linear-gradient(359.72deg, rgba(0, 0, 0, 0.5) 2.63%, rgba(0, 0, 0, 0) 136.03%);
 }
 
+.video__preview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 30px;
+  background: url(../img/image-3.png) #323549 no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 video {
   width: 100%;
   height: fit-content;
+}
+
+.video__preview:after {
+  content: "\25BA";
+  position: absolute;
+  padding: 14px 11px 14px 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
 }
 
 .gallery {
@@ -213,8 +238,8 @@ video {
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .gallery__item:nth-child(1) {
@@ -249,12 +274,12 @@ video {
 }
 
 .box {
+  overflow: hidden;
   border-radius: 8px;
   color: #ffffff;
   background: linear-gradient(359.72deg, rgba(0, 0, 0, 0.5) 2.63%, rgba(0, 0, 0, 0) 136.03%);
   flex: 1 1 250px;
   position: relative;
-  overflow: hidden;
   text-align: left;
 }
 
@@ -330,14 +355,14 @@ video {
 
 .modal {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   background: linear-gradient(359.72deg, rgba(0, 0, 0, 0.5) 2.63%, rgba(0, 0, 0, 0) 136.03%);
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .modal_dialog {
@@ -404,6 +429,7 @@ video {
 
 @media (max-width: 1000px) {
   .nav__list {
+    border: 1px solid rgba(0, 0, 0, 0.2);
     flex-direction: column;
     padding: 50px;
     position: absolute;
@@ -413,6 +439,15 @@ video {
   }
   .nav__btn {
     display: block;
+  }
+}
+
+@media (max-width: 390px) {
+  .gallery {
+    height: calc(315px + (100vw / 24));
+  }
+  .gallery__item {
+    flex-basis: 150px;
   }
 }
 
