@@ -237,6 +237,7 @@ video {
   flex-basis: 200px;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,18 +260,12 @@ video {
   box-shadow: inset 0px 1px 120px 20px;
 }
 
-.gallery__icon {
-  position: relative;
-}
-
-.gallery__item:hover .gallery__icon::after {
+.gallery__item:hover::after {
   content: '\271A';
+  display: block;
   position: absolute;
   font-size: 40px;
-  left: -20px;
-  top: -10px;
   color: #ffffff;
-  text-shadow: 0 0 0px #ffffff;
 }
 
 .box {
